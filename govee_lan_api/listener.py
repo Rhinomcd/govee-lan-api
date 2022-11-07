@@ -83,4 +83,4 @@ async def start_listener(command, device_scan_timeout_seconds=2):
 
         receiver_socket.close()
         transport.close()
-        return protocol.devices
+    return protocol.devices
