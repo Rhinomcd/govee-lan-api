@@ -9,10 +9,14 @@ This was done in a weekend to help support a home assistant plugin for
 controlling govee devices over their new(ish) LAN API
 
 
+## Usage 
+
+`pip install govee_lan_api`
+
 Here's some sample code that I'm using to test this -- formal API docs and tests coming soon. 
 
 ```py
-from govee-lan-api.client import GoveeClient
+from govee_lan_api import GoveeClient
 import asyncio
 import logging
 
