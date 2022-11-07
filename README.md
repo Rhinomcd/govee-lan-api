@@ -1,6 +1,7 @@
 # Govee LAN API Client 
 
-[![PyPI version](https://badge.fury.io/py/govee-lan-api.svg)](https://badge.fury.io/py/govee-lan-api)
+[![PyPI version](https://badge.fury.io/py/govee-lan-api.svg)](https://badge.fury.io/py/govee-lan-api) 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Rhinomcd_govee-lan-client&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Rhinomcd_govee-lan-client)
 
 A simple API client for [Govee's LAN UDP API](https://app-h5.govee.com/user-manual/wlan-guide)
 
