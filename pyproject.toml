@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "govee-lan-api"
-version = "0.1.1a0"
+version = "0.1.1"
 description = "Implementation of the Govee LAN API to control supported Govee products"
 authors = ["Ryan McDonough <Ryan@r2n.io>"]
 license = "MIT"
