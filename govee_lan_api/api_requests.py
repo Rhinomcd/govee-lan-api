@@ -16,13 +16,9 @@ def color_by_rgb(rgb):
         "msg": {
             "cmd": "colorwc",
             "data": {
-                "color": {
-                    "r": rgb[0],
-                    "g": rgb[1],
-                    "b": rgb[2]
-                },
-                "colorTemInKelvin": 0
-            }
+                "color": {"r": rgb[0], "g": rgb[1], "b": rgb[2]},
+                "colorTemInKelvin": 0,
+            },
         }
     }
     return json.dumps(message)
@@ -32,14 +28,7 @@ def color_by_kelvin(kelvin):
     message = {
         "msg": {
             "cmd": "colorwc",
-            "data": {
-                "color": {
-                    "r": 0,
-                    "g": 0,
-                    "b": 0
-                },
-                "colorTemInKelvin": kelvin
-            }
+            "data": {"color": {"r": 0, "g": 0, "b": 0}, "colorTemInKelvin": kelvin},
         }
     }
     return json.dumps(message)

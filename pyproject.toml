@@ -11,6 +11,9 @@ packages = [{include = "govee_lan_api"}]
 python = "^3.10"
 
 
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"

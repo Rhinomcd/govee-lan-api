@@ -12,7 +12,7 @@ class GoveeClient:
         command = {
             "message": message,
             "ip": self.devices[device_id]["ip"],
-            "device": device_id
+            "device": device_id,
         }
         await start_listener(command)
 
@@ -23,7 +23,7 @@ class GoveeClient:
         command = {
             "message": message,
             "ip": self.devices[device_id]["ip"],
-            "device": device_id
+            "device": device_id,
         }
         await start_listener(command)
 
@@ -34,7 +34,7 @@ class GoveeClient:
         command = {
             "message": message,
             "ip": self.devices[device_id]["ip"],
-            "device": device_id
+            "device": device_id,
         }
         await self.scan_devices()
         await start_listener(command)
@@ -46,7 +46,7 @@ class GoveeClient:
         command = {
             "message": message,
             "ip": self.devices[device_id]["ip"],
-            "device": device_id
+            "device": device_id,
         }
         await self.scan_devices()
         await start_listener(command)
@@ -58,7 +58,7 @@ class GoveeClient:
         command = {
             "message": message,
             "ip": self.devices[device_id]["ip"],
-            "device": device_id
+            "device": device_id,
         }
         await self.scan_devices()
         await start_listener(command)
