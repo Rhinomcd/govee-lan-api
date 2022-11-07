@@ -8,12 +8,12 @@
       "name": "Python: Govee API Consumer",
       "type": "python",
       "request": "launch",
-      "program": "${workspaceFolder}/test/consumer.py",
+      "program": "${workspaceFolder}/tests/consumer.py",
       "console": "integratedTerminal",
       "justMyCode": true,
-      "cwd": "${workspaceFolder}/src",
+      "cwd": "${workspaceFolder}/govee_lan_api",
       "env": {
-        "PYTHONPATH": "${workspaceFolder}/src"
+        "PYTHONPATH": "${workspaceFolder}/govee_lan_api"
       }
     }
   ]

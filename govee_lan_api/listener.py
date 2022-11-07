@@ -12,7 +12,7 @@ class GoveeScanListener:
     def __init__(self):
         self.devices = {}
 
-    def handleResponse(self, response):
+    def handle_response(self, response):
         if response['msg']['cmd'] == 'scan':
             device_data = response['msg']['data']
             self.devices.update({device_data['device']: device_data})
@@ -20,11 +20,12 @@ class GoveeScanListener:
     def connection_made(self, transport):
         self.transport = transport
 
-    def datagram_received(self, data, addr):
+    def datagram_received(self, data, _):
         response = json.loads(data.decode())
-        self.handleResponse(response)
+        self.handle_response(response)
 
     def connection_lost(self, e):
+        # ignore connection lost event. this might be able to be removed in the future
         pass
 
 
@@ -37,10 +38,6 @@ def get_bound_multicast_socket():
     receiver_sock.setsockopt(socket.IPPROTO_IP, socket.IP_ADD_MEMBERSHIP, mreq)
     receiver_sock.bind(receive)
     return receiver_sock
-
-
-async def send_request(message, ip, port):
-    transport, protocol = await loop.create_datagram_endpoint()
 
 
 def get_send_socket():
